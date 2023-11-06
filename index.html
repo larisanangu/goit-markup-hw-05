@@ -370,7 +370,108 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subcribe-part">
+          <label class="footer-subcribe-part-label" for="user-subscribe-email">Subscribe</label>
+            <input 
+            class="footer-subcribe-field" 
+            type="email"
+            name="user-subscribe-email" 
+            id="user-subscribe-email"
+            placeholder="E-mail"
+             />
+            <button class="subscribe-button" type="submit">Subscribe
+              <svg class="footer-subscribe-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>            
+        </div>
       </div>
-    </footer>    
+    </footer> 
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-button"  type="button" aria-label="modal-close-btn"> 
+          <svg class="modal-close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="contact-form-title">Leave your contacts and we will call you back</p>
+        <form class="contacts-form">
+          <div class="contacts-form-field-wrapper">
+            <label class="contacts-form-field-label" for="user-name">Name</label>                       
+            <div class="contacts-form-input-wrapper">
+              <input 
+              class="contact-form-field" 
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+              pattern="[A-Za-zА-Яа-яІіЇїЄє']+"
+              title="Ivan" />
+              <svg class="contact-form-icons" width="18" height="18">
+                <use href="./images/icons.svg#icon-person" ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="contacts-form-field-wrapper">
+            <label class="contacts-form-field-label" for="user-tel">Phone</label>
+              <div class="contacts-form-input-wrapper">
+                <input 
+                class="contact-form-field" 
+                type="tel" 
+                name="user-tel" 
+                id="user-tel"
+                required
+                pattern="[0-9] {11}"
+                title="xxxxxxxxxxx"/>
+            <svg class="contact-form-icons" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg> 
+          </div>
+          </div>
+          <div class="contacts-form-field-wrapper">
+            <label class="contacts-form-field-label" for="user-email">Email</label>
+            <div class="contacts-form-input-wrapper">
+              <svg class="contact-form-icons" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            <input 
+            class="contact-form-field" 
+            type="email"
+            name="user-email" 
+            id="user-email"
+            required
+             />
+            </div>
+          </div>
+          <div class="contacts-form-field-wrapper">
+            <label class="contacts-form-field-label" for="comment">Comment</label>
+            <textarea 
+            class="contact-form-text" 
+            name="comment" 
+            id="comment"
+            placeholder="Text input">
+           </textarea> 
+          </div>
+          <div class="checkbox-wrapper">
+            <input 
+            class="checkbox visually-hidden" 
+            type="checkbox" 
+            name="user-policy"
+            value="true" 
+            required
+            id="user-policy" />
+            <label for="user-policy">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Property"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a class="custom-checkbox-link" href="">Privacy Policy</a> 
+            </label>            
+          </div>
+          <button class="custom-form-button" type="submit" >Send</button>
+        </form>
+      </div>
+    </div>   
   </body>
 </html>

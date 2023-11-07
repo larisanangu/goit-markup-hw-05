@@ -590,12 +590,10 @@ stroke-width: 1px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
-
-.modal-close-button:hover, .modal-close-button:focus {
+.modal-close-button:hover,
+.modal-close-button:focus {
 background-color: #404BBF;
 border: none;
-}
-.modal-close-button:hover, .modal-close-button:focus .modal-close-btn-icon {
 fill: ;#FFFFFF;
 }
 
@@ -611,7 +609,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing:0.02em;
+letter-spacing: 0.02em;
 }
 
 .contact-form-title {
@@ -675,7 +673,7 @@ outline-color: transparent;
 outline-offset: 4px;
 }
 
-.contact-form-field:focus+.contact-form-icons {
+.contact-form-field:focus+ .contact-form-icons {
 fill:#4D5AE5;
 }
 
@@ -747,9 +745,10 @@ text-decoration-line: underline;
 }
 
 .checkbox:checked + .label-user-privacy .custom-checkbox {
-  background-color:#4D5AE5;
-  fill:#4D5AE5;
-}
+  background-color:#404bbf;
+  border: none;
+  fill:#F4F4FD; 
+  }
 
 .checkbox:focus + .label-user-privacy .custom-checkbox {
   outline: 2px solid rgba(0, 0, 255, 0.5)
@@ -780,7 +779,7 @@ background-color: #404BBF;
 }
 
 .footer-subcribe-part {
-  margin-left: 80px;
+margin-left: 80px;
 }
 
 .footer-subscribe-paragraf {
